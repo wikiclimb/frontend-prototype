@@ -1,4 +1,4 @@
-name: fluttersaurus
+name: Coverage
 
 on:
   push:
@@ -29,3 +29,7 @@ jobs:
         run: flutter test --no-pub --coverage --test-randomize-ordering-seed random
       - name: Check Code Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
+        with:
+          min_coverage: 90
+          # path: "./coverage/lcov.info"
+          # exclude: "**/*_observer.dart **/change.dart"
