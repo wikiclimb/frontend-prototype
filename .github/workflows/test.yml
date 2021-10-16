@@ -2,7 +2,7 @@ name: Tests
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
@@ -14,10 +14,10 @@ jobs:
         os: [ubuntu-18.04, windows-2019, macos-10.15]
     steps:
       # Set up Flutter.
-      - name: Clone Flutter repository with master channel
-        uses: subosito/flutter-action@4389e6cbc6cb8a4b18c628ff96ff90be0e926aa8
+      - name: Clone Flutter repository with main channel
+        uses: subosito/flutter-action@v1.5.3
         with:
-          channel: master
+          channel: main
       - run: flutter doctor -v
 
       # Checkout gallery code and get packages.
