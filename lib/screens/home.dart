@@ -3,6 +3,7 @@ import 'package:prototype/widgets/screen_list.dart';
 
 /// HomeScreen is the landing page of the application.
 class HomeScreen extends StatelessWidget {
+  static const String id = '/home';
   const HomeScreen({Key? key, required this.title}) : super(key: key);
   final String title;
 

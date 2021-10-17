@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prototype/screens/register.dart';
 import 'screens/home.dart';
 
 void main() {
@@ -15,7 +16,12 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: const HomeScreen(title: 'WikiClimb UI Prototypes'),
+      initialRoute: HomeScreen.id,
+      routes: {
+        HomeScreen.id: (context) =>
+            const HomeScreen(title: 'WikiClimb UI Prototypes'),
+        RegisterScreen.id: (context) => const RegisterScreen(),
+      },
     );
   }
 }

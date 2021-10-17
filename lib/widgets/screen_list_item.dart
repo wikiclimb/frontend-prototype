@@ -14,7 +14,10 @@ class ScreenListItem extends StatelessWidget {
       title: Text(screen.title),
       trailing: const Icon(Icons.chevron_right),
       onTap: () {
-        // TODO navigate to the page
+        Navigator.pushNamed(
+          context,
+          screen.id,
+        );
       },
     );
   }

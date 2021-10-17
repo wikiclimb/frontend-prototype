@@ -36,12 +36,12 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          directory: ./coverage/
-          env_vars: OS,PYTHON
-          fail_ci_if_error: true
+          # token: ${{ secrets.CODECOV_TOKEN }}
+          # directory: ./coverage/
+          # env_vars: OS,PYTHON
+          # fail_ci_if_error: true
           files: ./lcov.info
-          flags: unittests
-          name: codecov-umbrella
-          path_to_write_report: ./coverage/codecov_report.txt
+          # flags: unittests
+          # name: codecov-umbrella
+          # path_to_write_report: ./coverage/codecov_report.txt
           verbose: true

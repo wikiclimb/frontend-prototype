@@ -3,5 +3,12 @@
     "editor.defaultFormatter": "Dart-Code.dart-code",
     "editor.formatOnSave": true
   },
-  "cSpell.words": ["appbar", "wireframe"]
+  "cSpell.words": [
+    "appbar",
+    "codecov",
+    "lcov",
+    "subosito",
+    "unittests",
+    "wireframe"
+  ]
 }
