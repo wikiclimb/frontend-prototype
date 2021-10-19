@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prototype/widgets/screen_list.dart';
+import '../res/screens.dart';
+import '../widgets/screen_list.dart';
 
 /// HomeScreen is the landing page of the application.
 class HomeScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: const ScreenList(),
+      body: ScreenList(screens: screens),
     );
   }
 }

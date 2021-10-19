@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:prototype/res/screens.dart';
-import 'package:prototype/widgets/screen_list_item.dart';
+import '../models/screen_data.dart';
+import 'screen_list_item.dart';
 
 /// List of existing UI prototypes.
 ///
 /// This widget displays a static list of the UI prototypes that can be
 /// visualized and interacted with.
 class ScreenList extends StatelessWidget {
-  const ScreenList({Key? key}) : super(key: key);
+  const ScreenList({Key? key, required this.screens}) : super(key: key);
+
+  final List<ScreenData> screens;
 
   @override
   Widget build(BuildContext context) {

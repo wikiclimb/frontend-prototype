@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prototype/res/screens.dart';
+import '../models/screen_data.dart';
 
 /// Renders one item on the list of screens.
 class ScreenListItem extends StatelessWidget {
