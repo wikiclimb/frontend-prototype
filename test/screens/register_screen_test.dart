@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:wikiclimb_ui_prototypes/screens/register_screen.dart';
+import 'package:wikiclimb_ui_prototypes/screens/registration_confirmation_screen.dart';
 
 void main() {
   testWidgets(
@@ -8,10 +9,37 @@ void main() {
     (WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
-          home: RegisterScreen(),
+          home: Scaffold(
+            body: RegisterScreen(),
+          ),
         ),
       );
-      expect(find.text('Hello there'), findsOneWidget);
+      expect(
+        find.text('Join the community'),
+        findsOneWidget,
+      );
+    },
+  );
+
+  testWidgets(
+    'Sign up navigates to confirmation screen',
+    (WidgetTester tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: const Scaffold(
+            body: RegisterScreen(),
+          ),
+          routes: {
+            RegistrationConfirmationScreen.id: (context) =>
+                const RegistrationConfirmationScreen(),
+          },
+        ),
+      );
+      await tester.tap(find.byType(ElevatedButton));
+      expect(
+        find.text('Join the community'),
+        findsOneWidget,
+      );
     },
   );
 }

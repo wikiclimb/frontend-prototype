@@ -33,6 +33,8 @@ jobs:
           min_coverage: 90
           # path: "./coverage/lcov.info"
           # exclude: "**/*_observer.dart **/change.dart"
+      - name: Check the generated lcov.info file
+        run: cat ./coverage/lcov.info
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         with:
@@ -45,3 +47,8 @@ jobs:
           # name: codecov-umbrella
           # path_to_write_report: ./coverage/codecov_report.txt
           verbose: true
+      - name: Upload coverage to Codecov manually
+        run: |
+          curl -Os https://uploader.codecov.io/latest/linux/codecov
+          chmod +x codecov
+          ./codecov -t ${CODECOV_TOKEN}

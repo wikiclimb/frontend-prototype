@@ -20,7 +20,7 @@ void main() {
       expect(find.text('Register'), findsOneWidget);
       await tester.tap(find.text('Register'));
       await tester.pumpAndSettle();
-      expect(find.text('Hello there'), findsOneWidget);
+      expect(find.text('Join the community'), findsOneWidget);
     },
   );
 }

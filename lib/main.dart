@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wikiclimb_ui_prototypes/screens/registration_confirmation_screen.dart';
 import 'screens/register_screen.dart';
 import 'screens/home_screen.dart';
 
@@ -21,6 +22,8 @@ class App extends StatelessWidget {
         HomeScreen.id: (context) =>
             const HomeScreen(title: 'WikiClimb UI Prototypes'),
         RegisterScreen.id: (context) => const RegisterScreen(),
+        RegistrationConfirmationScreen.id: (context) =>
+            const RegistrationConfirmationScreen(),
       },
     );
   }
