@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wikiclimb_ui_prototypes/screens/registration_confirmation_screen.dart';
+import 'registration_confirmation_screen.dart';
 import '../widgets/forms/decorated_icon_input.dart';
 
 class RegisterScreen extends StatelessWidget {
@@ -36,7 +36,7 @@ class RegisterScreen extends StatelessWidget {
                 ),
                 const Center(
                   child: Text(
-                    'Join the community',
+                    'Join WikiClimb',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
@@ -45,7 +45,7 @@ class RegisterScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 48,
+                  height: 24,
                 ),
                 const DecoratedIconInput(
                   hintText: 'Username',
@@ -82,7 +82,7 @@ class RegisterScreen extends StatelessWidget {
                   child: const Text('Sign up'),
                 ),
                 const SizedBox(
-                  height: 48,
+                  height: 24,
                 ),
               ],
             ),

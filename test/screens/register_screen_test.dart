@@ -15,7 +15,7 @@ void main() {
         ),
       );
       expect(
-        find.text('Join the community'),
+        find.text('Join WikiClimb'),
         findsOneWidget,
       );
     },
@@ -37,7 +37,7 @@ void main() {
       );
       await tester.tap(find.byType(ElevatedButton));
       expect(
-        find.text('Join the community'),
+        find.text('Join WikiClimb'),
         findsOneWidget,
       );
     },

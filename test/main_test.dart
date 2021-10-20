@@ -7,8 +7,7 @@ void main() {
     (WidgetTester tester) async {
       await tester.pumpWidget(const App());
       expect(find.text('WikiClimb UI Prototypes'), findsOneWidget);
-      expect(find.text('Map'), findsOneWidget);
-      expect(find.text('Area List'), findsOneWidget);
+      expect(find.text('Register'), findsOneWidget);
     },
   );
 
@@ -20,7 +19,19 @@ void main() {
       expect(find.text('Register'), findsOneWidget);
       await tester.tap(find.text('Register'));
       await tester.pumpAndSettle();
-      expect(find.text('Join the community'), findsOneWidget);
+      expect(find.text('Join WikiClimb'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
+    'Can navigate to Registration Confirmation Screen',
+    (WidgetTester tester) async {
+      await tester.pumpWidget(const App());
+      expect(find.byType(App), findsOneWidget);
+      expect(find.text('Registration Confirmation'), findsOneWidget);
+      await tester.tap(find.text('Registration Confirmation'));
+      await tester.pumpAndSettle();
+      expect(find.text('Success'), findsOneWidget);
     },
   );
 }

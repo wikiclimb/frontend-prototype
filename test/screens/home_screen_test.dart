@@ -15,7 +15,7 @@ void main() {
         ),
       );
       expect(find.text('Test title'), findsOneWidget);
-      expect(find.text('Map'), findsOneWidget);
+      expect(find.text('Registration Confirmation'), findsOneWidget);
       expect(find.text('Area List'), findsOneWidget);
     },
   );

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wikiclimb_ui_prototypes/screens/registration_confirmation_screen.dart';
+import 'screens/registration_confirmation_screen.dart';
 import 'screens/register_screen.dart';
 import 'screens/home_screen.dart';
 
