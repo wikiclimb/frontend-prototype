@@ -16,7 +16,7 @@ void main() {
               hintText: hintText,
               prefixIcon: prefixIcon,
               fillColor: getColor(),
-              key: const ObjectKey("TestDecoratedInput"),
+              key: const ObjectKey('TestDecoratedInput'),
             ),
           ),
         ),
@@ -41,7 +41,7 @@ void main() {
             body: DecoratedIconInput(
               hintText: hintText,
               prefixIcon: prefixIcon,
-              key: ObjectKey("TestDecoratedInput"),
+              key: ObjectKey('TestDecoratedInput'),
             ),
           ),
         ),

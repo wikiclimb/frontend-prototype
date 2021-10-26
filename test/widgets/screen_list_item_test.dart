@@ -13,7 +13,7 @@ void main() {
             body: ScreenListItem(
               screen: ScreenData(
                 id: 'test_id',
-                title: "Test Title 1",
+                title: 'Test Title 1',
                 iconData: Icons.security,
               ),
             ),

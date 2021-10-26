@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'res/areas.dart';
+import 'screens/area_list_screen.dart';
 import 'screens/registration_confirmation_screen.dart';
 import 'screens/register_screen.dart';
 import 'screens/home_screen.dart';
@@ -24,6 +26,7 @@ class App extends StatelessWidget {
         RegisterScreen.id: (context) => const RegisterScreen(),
         RegistrationConfirmationScreen.id: (context) =>
             const RegistrationConfirmationScreen(),
+        AreaListScreen.id: (context) => AreaListScreen(areas: areas),
       },
     );
   }

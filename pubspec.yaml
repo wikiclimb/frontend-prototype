@@ -12,11 +12,13 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  fl_chart: ^0.40.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
+  network_image_mock: ^2.0.1
 
 flutter:
   uses-material-design: true

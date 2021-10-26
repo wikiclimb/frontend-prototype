@@ -14,17 +14,17 @@ void main() {
               screens: <ScreenData>[
                 ScreenData(
                   id: 'test_id',
-                  title: "Test Title 1",
+                  title: 'Test Title 1',
                   iconData: Icons.text_snippet,
                 ),
                 ScreenData(
                   id: 'test_id',
-                  title: "Test Title 2",
+                  title: 'Test Title 2',
                   iconData: Icons.text_snippet,
                 ),
                 ScreenData(
                   id: 'test_id',
-                  title: "Test Title 3",
+                  title: 'Test Title 3',
                   iconData: Icons.security,
                 ),
               ],

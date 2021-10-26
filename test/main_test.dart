@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:wikiclimb_ui_prototypes/main.dart';
+import 'package:network_image_mock/network_image_mock.dart';
 
 void main() {
   testWidgets(
@@ -32,6 +33,19 @@ void main() {
       await tester.tap(find.text('Registration Confirmation'));
       await tester.pumpAndSettle();
       expect(find.text('Success'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
+    'Can navigate to Area List Screen',
+    (WidgetTester tester) async {
+      await tester.pumpWidget(const App());
+      expect(find.byType(App), findsOneWidget);
+      expect(find.text('Area List'), findsOneWidget);
+      await tester.tap(find.text('Area List'));
+      await mockNetworkImagesFor(() => tester.pumpAndSettle());
+      expect(find.text('Yosemite'), findsOneWidget);
+      expect(find.textContaining('amazing rock'), findsOneWidget);
     },
   );
 }
