@@ -5,6 +5,7 @@ import 'package:wikiclimb_ui_prototypes/screens/area_list_screen.dart';
 import 'package:wikiclimb_ui_prototypes/screens/home_screen.dart';
 import 'package:wikiclimb_ui_prototypes/screens/register_screen.dart';
 import 'package:wikiclimb_ui_prototypes/screens/registration_confirmation_screen.dart';
+import 'package:wikiclimb_ui_prototypes/screens/route_screen.dart';
 
 List<ScreenData> screens = <ScreenData>[
   ScreenData(
@@ -26,5 +27,10 @@ List<ScreenData> screens = <ScreenData>[
     id: HomeScreen.id,
     title: 'Area',
     iconData: Icons.deck,
+  ),
+  ScreenData(
+    id: RouteScreen.id,
+    title: 'Route',
+    iconData: Icons.router,
   ),
 ];

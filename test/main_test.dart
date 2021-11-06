@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:wikiclimb_ui_prototypes/main.dart';
+import 'package:wikiclimb_ui_prototypes/app.dart';
 import 'package:network_image_mock/network_image_mock.dart';
 
 void main() {
@@ -46,6 +46,19 @@ void main() {
       await mockNetworkImagesFor(() => tester.pumpAndSettle());
       expect(find.text('Yosemite'), findsOneWidget);
       expect(find.textContaining('amazing rock'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
+    'Can navigate to Route Screen',
+    (WidgetTester tester) async {
+      await tester.pumpWidget(const App());
+      expect(find.byType(App), findsOneWidget);
+      expect(find.text('Route'), findsOneWidget);
+      await tester.tap(find.text('Route'));
+      await mockNetworkImagesFor(() => tester.pumpAndSettle());
+      expect(find.text('Moon Safari'), findsNWidgets(3));
+      expect(find.textContaining('7a+'), findsOneWidget);
     },
   );
 }
