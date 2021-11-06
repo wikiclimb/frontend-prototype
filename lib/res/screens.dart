@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:wikiclimb_ui_prototypes/models/screen_data.dart';
 import 'package:wikiclimb_ui_prototypes/screens/area_list_screen.dart';
 import 'package:wikiclimb_ui_prototypes/screens/home_screen.dart';
+import 'package:wikiclimb_ui_prototypes/screens/login_screen.dart';
 import 'package:wikiclimb_ui_prototypes/screens/register_screen.dart';
 import 'package:wikiclimb_ui_prototypes/screens/registration_confirmation_screen.dart';
 import 'package:wikiclimb_ui_prototypes/screens/route_screen.dart';
@@ -17,6 +18,11 @@ List<ScreenData> screens = <ScreenData>[
     id: RegistrationConfirmationScreen.id,
     title: 'Registration Confirmation',
     iconData: Icons.how_to_reg,
+  ),
+  ScreenData(
+    id: LoginScreen.id,
+    title: 'Login',
+    iconData: Icons.login,
   ),
   ScreenData(
     id: AreaListScreen.id,

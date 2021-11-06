@@ -61,4 +61,17 @@ void main() {
       expect(find.textContaining('7a+'), findsOneWidget);
     },
   );
+
+  testWidgets(
+    'Can navigate to Login Screen',
+    (WidgetTester tester) async {
+      await tester.pumpWidget(const App());
+      expect(find.byType(App), findsOneWidget);
+      expect(find.text('Login'), findsOneWidget);
+      await tester.tap(find.text('Login'));
+      await tester.pumpAndSettle();
+      expect(find.text('I forgot my password'), findsOneWidget);
+      // expect(find.textContaining('7a+'), findsOneWidget);
+    },
+  );
 }
