@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:wikiclimb_ui_prototypes/models/screen_data.dart';
 import 'package:wikiclimb_ui_prototypes/screens/area_list_screen.dart';
+import 'package:wikiclimb_ui_prototypes/screens/forgot_password_screen.dart';
 import 'package:wikiclimb_ui_prototypes/screens/home_screen.dart';
 import 'package:wikiclimb_ui_prototypes/screens/login_screen.dart';
 import 'package:wikiclimb_ui_prototypes/screens/register_screen.dart';
@@ -23,6 +24,11 @@ List<ScreenData> screens = <ScreenData>[
     id: LoginScreen.id,
     title: 'Login',
     iconData: Icons.login,
+  ),
+  ScreenData(
+    id: ForgotPasswordScreen.id,
+    title: 'Forgot Password',
+    iconData: Icons.lock_open_rounded,
   ),
   ScreenData(
     id: AreaListScreen.id,

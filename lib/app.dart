@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wikiclimb_ui_prototypes/screens/forgot_password_screen.dart';
 import 'screens/login_screen.dart';
 import 'res/areas.dart';
 import 'screens/area_list_screen.dart';
@@ -23,6 +24,7 @@ class App extends StatelessWidget {
             const HomeScreen(title: 'WikiClimb UI Prototypes'),
         RegisterScreen.id: (context) => const RegisterScreen(),
         LoginScreen.id: (context) => const LoginScreen(),
+        ForgotPasswordScreen.id: (context) => const ForgotPasswordScreen(),
         RegistrationConfirmationScreen.id: (context) =>
             const RegistrationConfirmationScreen(),
         AreaListScreen.id: (context) => AreaListScreen(areas: areas),
